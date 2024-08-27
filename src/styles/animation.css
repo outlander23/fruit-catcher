@@ -1,0 +1,37 @@
+/* Fly animation */
+@keyframes flyAnimation {
+  0% { background-image: url('../assets/plane/fly1.png'); }
+  50% { background-image: url('../assets/plane/fly2.png'); }
+  100% { background-image: url('../assets/plane/fly1.png'); }
+}
+
+/* Shoot animation */
+@keyframes shootAnimation {
+  0% { background-image: url('../assets/plane/shoot1.png'); }
+  20% { background-image: url('../assets/plane/shoot2.png'); }
+  40% { background-image: url('../assets/plane/shoot3.png'); }
+  60% { background-image: url('../assets/plane/shoot4.png'); }
+  80% { background-image: url('../assets/plane/shoot3.png'); }
+  100% { background-image: url('../assets/plane/shoot1.png'); }
+}
+
+.plane-fly {
+  animation: flyAnimation 1s infinite;
+  width: 465px; /* Adjust based on your image size */
+  height: 319px; /* Adjust based on your image size */
+  background-size: cover;
+  transition: top 0.2s ease-in-out; /* Smooth vertical movement */
+}
+.plane-shoot {
+  animation: shootAnimation 1s steps(5) infinite;
+  width: 465px; /* Adjust based on your image size */
+  height: 319px; /* Adjust based on your image size */
+  background-size: cover;
+}
+
+.plane-fly, .plane-shoot {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
