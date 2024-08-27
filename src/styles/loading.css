@@ -1,0 +1,45 @@
+/* Full-screen background with gradient and center alignment */
+.loading-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  /* Stylish spinner */
+  .loader {
+    border: 8px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    border-top: 8px solid #fff;
+    width: 80px;
+    height: 80px;
+    animation: spin 1.5s linear infinite;
+    margin-bottom: 20px;
+  }
+  
+  /* Text animation */
+  .loading-text {
+    font-size: 1.5rem;
+    font-family: 'GameFont', sans-serif; /* Apply your custom font */
+    font-weight: bold;
+    animation: fadeIn 2s ease-in-out infinite;
+  }
+  
+  /* Spinner rotation animation */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Text fade-in and fade-out animation */
+  @keyframes fadeIn {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+  }
+  

@@ -1,0 +1,34 @@
+.score-display {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Transparent background */
+    padding: 10px;
+    border-radius: 10px; /* Rounded corners */
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  
+  .score-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .plane-icon {
+    width: 30px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .life-info {
+    display: flex;
+    margin-left: 20px;
+  }
+  
+  .plane-icon-life {
+    width: 30px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  

@@ -1,3 +1,83 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* src/styles/loading.css */
+
+.loading-screen {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    font-size: 2rem;
+  }
+  /* Navbar.css */
+.navbar {
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.navbar-content {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.navbar-score {
+  display: flex;
+  align-items: center;
+}
+
+.score-label {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.score-value {
+  font-size: 22px;
+  font-weight: bold;
+  color: #f0db4f;
+}
+
+/* ScoreDisplay.css */
+.score-display {
+  position: fixed;
+  top: 20px; /* Position from the top */
+  right: 20px; /* Position from the right */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.score-label {
+  display: block;
+  font-size: 16px;
+}
+
+.score-value {
+  font-size: 24px;
+}
